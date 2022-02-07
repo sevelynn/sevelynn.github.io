@@ -15,6 +15,7 @@
 		<img id="crate" src="images/wood.jpg" crossorigin="anonymous" />
 		<img id="ball" src="images/basketball.png" crossorigin="anonymous" />
 		<img id="particle" src="images/red-particle.png" crossorigin="anonymous" />
+		<img id="particle2" src="images/blue-particle.png" crossorigin="anonymous" />
 	</a-assets>
 		
 	<a-sky 
@@ -52,6 +53,14 @@
 		position = " 1 0.75 -3"
 		color = "#8888BB"
 		material = "src: #particle; repeat: 4 2;"
+		shadow = "cast: true; receive: true">
+	</a-cylinder>
+	
+	<a-cylinder
+		radius = "0.5" height = "1"
+		position = " 3 0.5 -3"
+		color = "#8888BB"
+		material = "src: #particle2; repeat: 4 2;"
 		shadow = "cast: true; receive: true">
 	</a-cylinder>
 	
