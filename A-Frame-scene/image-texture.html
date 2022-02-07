@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>A-Frame - Image Textures</title>
+	<script src="js/aframe-master.1.0.4.min.js"></script>
+</head>
+
+<body>
+<a-scene antialias="true">
+	
+	<a-assets>
+		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
+		<img id="ground" src="images/tiles.jpg" crossorigin="anonymous" />
+		<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
+		<img id="ball" src="images/basketball.png" crossorigin="anonymous" />
+		<img id="particles" src="images/red-particle.png" crossorigin="anonymous" />
+		<img id="boom" src="fireball.png" crossorigin="anonymous" />
+	</a-assets>
+		
+	<a-sky 
+		color = "#FFFFFF"
+		material = "src: #sky">
+	</a-sky>
+
+	<a-plane
+		width="100" height="100"
+		position=" 0.00 0.00 0.00" 
+		rotation="-90 0 0" 
+		color="#888888" 
+		material="src: #ground; repeat:10 10; transparent: true; opacity: 0.75"
+		shadow="cast: false; receive: true">
+	</a-plane>
+	
+	<a-box
+		width = "1" height = "1" depth = "1"
+		position = "-1 0.5 -3"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #crate"
+		shadow = "cast: true; receive: true">
+	</a-box>
+	
+	<a-sphere
+		radius = "1.25"
+		position = "0 1.25 -5"
+		material = "src: #ball;"
+		shadow = "cast: true; receive: true">
+	</a-sphere>
+	
+	<a-cylinder
+		radius = "0.5" height = "1.5"
+		position = " 1 0.75 -3"
+		color = "#8888BB"
+		material = "src: #particles; repeat: 4 2;"
+		shadow = "cast: true; receive: true">
+	</a-cylinder>
+
+	<a-cone
+		scale = "1 2 1"
+		position = "10 25 -3"
+		material = "src: #boom"
+		shadow = "cast: true; receive: true">
+	</a-cone>
+	
+</a-scene>
+</body>
+</html>
