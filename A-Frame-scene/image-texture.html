@@ -3,7 +3,7 @@
 
 <head>
 	<title>A-Frame - Image Textures</title>
-	<script src="js/aframe-scene.1.0.4.min.js"></script>
+	<script src="js/aframe-master.1.0.4.min.js"></script>
 </head>
 
 <body>
@@ -11,11 +11,10 @@
 	
 	<a-assets>
 		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
-		<img id="ground" src="images/tiles.jpg" crossorigin="anonymous" />
-		<img id="crate" src="images/wood.jpg" crossorigin="anonymous" />
-		<img id="ball" src="images/basketball.png" crossorigin="anonymous" />
-		<img id="particle" src="images/red-particle.png" crossorigin="anonymous" />
-		<img id="particles" src="images/blue-particle.png" crossorigin="anonymous" />
+		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
+		<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
+		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
+		<img id="hexagons" src="images/hexagons.png" crossorigin="anonymous" />
 	</a-assets>
 		
 	<a-sky 
@@ -28,12 +27,12 @@
 		position=" 0.00 0.00 0.00" 
 		rotation="-90 0 0" 
 		color="#888888" 
-		material="src: #ground; repeat:10 10; transparent: true; opacity: 0.75"
+		material="src: #grass; repeat:10 10; transparent: true; opacity: 0.75"
 		shadow="cast: false; receive: true">
 	</a-plane>
 	
 	<a-box
-		width = "3" height = "3" depth = "3"
+		width = "1" height = "1" depth = "1"
 		position = "-1 0.5 -3"
 		rotation = "0 45 0"  
 		color = "#FFFFFF"
@@ -42,9 +41,9 @@
 	</a-box>
 	
 	<a-sphere
-		radius = "1"
+		radius = "1.25"
 		position = "0 1.25 -5"
-		material = "src: #ball;"
+		material = "src: #earth;"
 		shadow = "cast: true; receive: true">
 	</a-sphere>
 	
@@ -52,15 +51,7 @@
 		radius = "0.5" height = "1.5"
 		position = " 1 0.75 -3"
 		color = "#8888BB"
-		material = "src: #particle; repeat: 4 2;"
-		shadow = "cast: true; receive: true">
-	</a-cylinder>
-	
-	<a-cylinder
-		radius = "0.5" height = "1.5"
-		position = " 2 0.5 -3"
-		color = "#8888BB"
-		material = "src: #particles; repeat: 4 2;"
+		material = "src: #hexagons; repeat: 4 2;"
 		shadow = "cast: true; receive: true">
 	</a-cylinder>
 	
