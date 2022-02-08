@@ -16,6 +16,8 @@
 		<img id="ball" src="images/basketball.png" crossorigin="anonymous" />
 		<img id="particle" src="images/red-particle.png" crossorigin="anonymous" />
 		<img id="particle2" src="images/blue-particle.png" crossorigin="anonymous" />
+		<img id="scoreboard" src="images/scoreboard.jpg" crossorigin="anonymous" />
+
 	</a-assets>
 		
 	<a-sky 
@@ -70,6 +72,15 @@
 		material = "src: #particle; repeat: 4 2;"
 		shadow = "cast: true; receive: true">
 	</a-cylinder>
+	
+	<a-box
+		width = ".5" height = "1" depth = "1"
+		position = "-1 5 -3"
+		rotation = "0 90 0"  
+		color = "#8888BB"
+		material = "src: #scoreboard"
+		shadow = "cast: true; receive: true">
+	</a-box>
 	
 	<a-sphere
 		radius = "1.25"
