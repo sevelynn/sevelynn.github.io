@@ -11,11 +11,9 @@
 	
 	<a-assets>
 		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
-		<img id="ground" src="images/tiles.jpg" crossorigin="anonymous" />
-		<img id="crate" src="images/wood.jpg" crossorigin="anonymous" />
+		<img id="ground" src="images/wood.jpg" crossorigin="anonymous" />
+		<img id="base" src="images/metal.jpg" crossorigin="anonymous" />
 		<img id="ball" src="images/basketball.png" crossorigin="anonymous" />
-		<img id="particle" src="images/red-particle.png" crossorigin="anonymous" />
-		<img id="particle2" src="images/blue-particle.png" crossorigin="anonymous" />
 		<img id="scoreboard" src="images/scoreboard.jpg" crossorigin="anonymous" />
 
 	</a-assets>
@@ -39,7 +37,7 @@
 		position = "-1 0.5 -3"
 		rotation = "0 90 0"  
 		color = "#8888BB"
-		material = "src: #crate"
+		material = "src: #base"
 		shadow = "cast: true; receive: true">
 	</a-box>
 	
@@ -47,7 +45,7 @@
 		radius = "0.5" height = "1"
 		position = " -1 1.5 -3"
 		color = "#8888BB"
-		material = "src: #crate"
+		material = "src: #base"
 		shadow = "cast: true; receive: true">
 	</a-cylinder>
 	
@@ -69,7 +67,7 @@
 		radius = "0.1" height = "3"
 		position = " -1 3 -3"
 		color = "#8888BB"
-		material = "src: #particle; repeat: 4 2;"
+		material = "src: #base; repeat: 4 2;"
 		shadow = "cast: true; receive: true">
 	</a-cylinder>
 	
