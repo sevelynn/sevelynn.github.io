@@ -5,15 +5,11 @@
     <a-scene antialias="true">
 	
 	<a-assets>
-		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
-        <img id="dusty_lake" src="images/dusty_lake.jpg" crossorigin="anonymous" />
-        <img id="old_church" src="images/old_church.jpg" crossorigin="anonymous" />
-        <img id="marriot" src="images/marriot.jpg" crossorigin="anonymous" />
-        <img id="whisky_room" src="images/whisky_room.jpg" crossorigin="anonymous" />
-		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
-		<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
-		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
-		<img id="hexagons" src="images/hexagons.png" crossorigin="anonymous" />
+		<img id="sky" src="images/stars.jpeg" crossorigin="anonymous" />
+	<img id="beach" src="images/beach.jpg" crossorigin="anonymous" />
+	<img id="dragon" src="images/sohmal.jpg" crossorigin="anonymous" />
+	<img id="jaeger" src="images/jaeger.jpg" crossorigin="anonymous" />
+	<img id="" src="images/.jpg" crossorigin="anonymous" />
 	</a-assets>
 		
 	<a-sky 
@@ -27,7 +23,7 @@
         rotation="0 45 0"
         value="Nine O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #old_church"      
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #beach"      
       ></a-box>  
      <a-box
         position="2 2 -2"
@@ -35,7 +31,7 @@
         rotation="0 -45 0"
         value="Three O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #dusty_lake"      
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #sohmal"      
       ></a-box>  
      <a-box
         position="0 2 2.5"
@@ -43,7 +39,7 @@
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #jaeger"     
       ></a-box> 
      <a-box
         position="2 2 2.5"
@@ -51,7 +47,7 @@
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #marriot"     
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #"     
       ></a-box> 
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
