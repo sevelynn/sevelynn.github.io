@@ -9,7 +9,7 @@
 	<img id="beach" src="images/beach.jpg" crossorigin="anonymous" />
 	<img id="dragon" src="images/sohmal.jpg" crossorigin="anonymous" />
 	<img id="jaeger" src="images/jaeger.jpg" crossorigin="anonymous" />
-	<img id="" src="images/.jpg" crossorigin="anonymous" />
+	<img id="pennywise" src="images/pennywises.jpg" crossorigin="anonymous" />
 	</a-assets>
 		
 	<a-sky 
@@ -35,22 +35,24 @@
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #dragon"      
       ></a-entity> 
 	    
-     <a-box
+     <a-entity gltf-model="models/dog.glb"
         position="0 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #jaeger"     
-      ></a-box> 
-     <a-box
+      ></a-entity> 
+	    
+     <a-entity gltf-model="models/clown.glb"
         position="2 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #"     
-      ></a-box> 
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #pennywise"     
+      ></a-entity> 
+	    
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
